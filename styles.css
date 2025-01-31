@@ -1,0 +1,48 @@
+        .status {
+            font-size: 18px;
+            color: blue;
+            margin-top: 10px;
+        }
+
+        .btn-group .btn-check:checked + .btn {
+    background-color: #3b82f6;  /* Seçilen buton için arka plan rengi */
+    border-color: #3b82f6;      /* Seçilen buton için kenarlık rengi */
+}
+
+.btn-group .btn {
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.btn-group .btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group .btn-check:checked + .btn svg {
+    fill: #fff; /* Seçilen butonun ikon rengini beyaz yapar */
+}
+
+.btn-check {
+    display: none;  /* Radio button'ı gizle */
+}
+
+@media (max-width: 768px) {
+    .mt-3.d-flex {
+        flex-direction: column; /* Mobilde butonları dikey hizalayın */
+        align-items: center;     /* Butonları ortalayın */
+    }
+
+    .btn {
+        width: 100%; /* Butonların genişliğini %100 yaparak ekran boyutuna göre uyumlu hale getirin */
+        margin-bottom: 10px; /* Butonlar arasına dikey boşluk ekleyin */
+    }
+
+    .btn-group .btn {
+        margin: 5px 0; /* Butonlar arasındaki boşluğu ayarlayın */
+    }
+}
+
+
